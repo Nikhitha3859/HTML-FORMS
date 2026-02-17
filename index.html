@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+
+    <h1>🍕 Pizza Order Form</h1>
+
+    <form>
+        <h3>Customer Details</h3>
+        <label for="cname">Name:</label>
+        <input type="text" id="cname" name="cname" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br><br>
+
+        <h3>Choose Your Size</h3>
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">Small (6")</label><br>
+
+        <input type="radio" id="medium" name="size" value="medium" checked>
+        <label for="medium">Medium (10")</label><br>
+
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large (14")</label><br>
+
+        <h3>Choose Your Toppings</h3>
+        <input type="checkbox" id="cheese" name="topping" value="extra_cheese">
+        <label for="cheese">Extra Cheese</label><br>
+
+        <input type="checkbox" id="mushroom" name="topping" value="mushroom">
+        <label for="mushroom">Mushrooms</label><br>
+
+        <input type="checkbox" id="olives" name="topping" value="olives">
+        <label for="olives">Black Olives</label><br>
+
+        <input type="checkbox" id="corn" name="topping" value="corn">
+        <label for="corn">Sweet Corn</label><br>
+
+        <h3>Delivery Method</h3>
+        <label for="delivery">How do you want it?</label>
+        <select id="delivery" name="delivery">
+            <option value="pickup">Store Pickup</option>
+            <option value="home_delivery">Home Delivery</option>
+            <option value="dine_in">Dine In</option>
+        </select><br><br>
+
+        <label for="notes">Special Instructions (e.g., spicy, no onions):</label><br>
+        <textarea id="notes" name="notes" rows="3" cols="40"></textarea><br><br>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+</body>
+</html>
